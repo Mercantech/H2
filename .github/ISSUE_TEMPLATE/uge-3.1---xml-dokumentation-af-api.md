@@ -10,7 +10,7 @@ assignees: ''
 ## XML Dokumentation af API
 
 - [ ] Tilføj XML-kommentarer til alle controllere og endpoints
-  - [ ] Brug <summary>, <param>, <returns> og mindst én <response code="..."> pr. endpoint
+  - [ ] Brug "<summary>, <param>, <returns> og mindst én <response code="...">" pr. endpoint
 - [ ] Aktivér XML-dokumentation i jeres .csproj-fil
 - [ ] Konfigurer Swagger til at vise XML-dokumentation
 - [ ] Bekræft at dokumentationen vises i Swagger UI

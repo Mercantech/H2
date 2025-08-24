@@ -1,7 +1,7 @@
 ---
-name: Uge 4 - State Management i Blazor
-about: Uge 4 - State Management i Blazor
-title: Uge 4 - State Management i Blazor
+name: Uge 4.3 - State Management i Blazor
+about: Uge 4.3 - State Management i Blazor
+title: Uge 4.3 - State Management i Blazor
 labels: ''
 assignees: ''
 
@@ -9,11 +9,9 @@ assignees: ''
 
 ## State Management i Blazor
 
-- [ ] Se video om State Management (link kommer)
 - [ ] Læs pensum om State Management
 - [ ] Implementér state management i jeres Blazor app:
-  - [ ] Brug Blazor's built-in state management
-  - [ ] Implementér custom state containers
+  - [ ] Brug et built-in state management system eller lav jeres egen som tilgår local-storage i browseren
   - [ ] Håndter global state (fx user authentication)
 - [ ] Test at state opdateres korrekt mellem komponenter
 - [ ] Dokumentér jeres state management løsning

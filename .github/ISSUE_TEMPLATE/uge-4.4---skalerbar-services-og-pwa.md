@@ -1,7 +1,7 @@
 ---
-name: Uge 4 - Skalerbar services & PWA
-about: Uge 4 - Skalerbar services i frontend udvikling og PWA
-title: Uge 4 - Skalerbar services & PWA
+name: Uge 4.4 - Skalerbar services & PWA
+about: Uge 4.4 - Skalerbar services i frontend udvikling og PWA
+title: Uge 4.4 - Skalerbar services & PWA
 labels: ''
 assignees: ''
 

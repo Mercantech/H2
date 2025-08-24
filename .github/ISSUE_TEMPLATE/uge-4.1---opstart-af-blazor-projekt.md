@@ -1,7 +1,7 @@
 ---
-name: Uge 4 - Opstart af Blazor projekt
-about: Uge 4 - Opstart af Blazor projekt med fokus på API kald
-title: Uge 4 - Opstart af Blazor projekt
+name: Uge 4.1 - Opstart af Blazor projekt
+about: Uge 4.1 - Opstart af Blazor projekt med fokus på API kald
+title: Uge 4.1 - Opstart af Blazor projekt
 labels: ''
 assignees: ''
 
@@ -9,7 +9,7 @@ assignees: ''
 
 ## Opstart af Blazor projekt med fokus på API kald
 
-- [ ] Opret et nyt Blazor projekt (hvis ikke allerede gjort)
+- [ ] Opret et nyt Blazor WASM projekt eller brug det eksiterende
 - [ ] Konfigurer HTTP client til at kalde jeres API
 - [ ] Opret service-klasser til API kald
   - [ ] Implementér metoder til at hente data fra API

@@ -1,7 +1,7 @@
 ---
-name: Uge 4 - Loginsystem med API & Blazor
-about: Uge 4 - Loginsystem op med API med Blazor
-title: Uge 4 - Loginsystem med API & Blazor
+name: Uge 4.2 - Loginsystem med API & Blazor
+about: Uge 4.2 - Loginsystem op med API med Blazor
+title: Uge 4.2 - Loginsystem med API & Blazor
 labels: ''
 assignees: ''
 
