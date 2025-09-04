@@ -185,3 +185,8 @@ For produktion, anbefales det at:
 3. Tilføje reverse proxy (f.eks. nginx) foran services
 4. Konfigurere logging og monitoring
 5. Tilføje database service hvis nødvendigt 
+
+
+## Deployment 
+
+Vi skal deploye både vores Backend og Frontend med Docker og det er filerne opsat til!
