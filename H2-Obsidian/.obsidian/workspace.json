@@ -11,17 +11,10 @@
             "id": "9b2ad85c762b9c64",
             "type": "leaf",
             "state": {
-              "type": "canvas",
-              "state": {
-                "file": "Teori/Uge 1 - API Kald/Oversigt.canvas",
-                "viewState": {
-                  "x": -20,
-                  "y": -250,
-                  "zoom": -0.5483653470575857
-                }
-              },
-              "icon": "lucide-layout-dashboard",
-              "title": "Oversigt"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
@@ -97,7 +90,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Templates/Møde Template.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,7 +99,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Møde Template"
+              "title": "Backlinks"
             }
           },
           {
@@ -170,8 +162,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -187,26 +178,30 @@
   },
   "active": "9b2ad85c762b9c64",
   "lastOpenFiles": [
-    "Teori/Uge 1 - API Kald/H2 Uge 1 - Studieplan.md",
-    "Teori/Uge 2 - Backend Udvikling/Backend programmering med EFCore.md",
-    "Teori/Uge 2 - Backend Udvikling/Hvad er EFCore.md",
-    "2025-08-31.md",
     "🚀 Obsidian Funktioner Guide.md",
     "🔍 Obsidian Search Examples.md",
-    "📚 Obsidian Workflow Tips.md",
+    "Templates/Møde Template.md",
+    "Templates/Møde Template 1.md",
+    "Teori/Teori Oversigt.md",
+    "Teori/Teori Canvas.canvas",
+    "Teori/Uge 2 - Backend Udvikling/Hvad er EFCore.md",
+    "Teori/Uge 1 - API Kald/Oversigt.canvas",
+    "Teori/Uge 1 - API Kald/H2 Uge 1 - API kald.md",
+    "Teori/Uge 1 - API Kald/H2 Uge 1 - Studieplan.md",
     "🎯 H2 Projekt Dashboard.md",
-    "DatabaseStruckture.png",
+    "Teori/Uge 2 - Backend Udvikling/Backend programmering med EFCore.md",
+    "H2-Forløbet.canvas",
+    "Assets",
+    "Assets/DatabaseStruckture.png",
+    "Teori/Uge 1 - API Kald/Uge1.base",
+    "2025-08-31.md",
+    "📚 Obsidian Workflow Tips.md",
     "Teori/Uge 2 - Backend Udvikling",
     "Weather Forecast API.md",
-    "Teori/Uge 1 - API Kald/Oversigt.canvas",
-    "Teori/Uge 1 - API Kald/Untitled.base",
-    "Teori/Untitled.md",
     "Teori/Uge 1 - API Kald",
     "Frontend-Blazor/Blazor WASM.md",
     "Teori",
     "Backend-API/C-Sharp Web API.md",
-    "Templates/Møde Template.md",
-    "H2-Forløbet.canvas",
     "Welcome.md",
     "create a link.md",
     "Templates",

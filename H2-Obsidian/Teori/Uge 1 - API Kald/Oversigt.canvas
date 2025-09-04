@@ -1,9 +1,14 @@
 {
 	"nodes":[
-		{"id":"8d2e16426dc336b1","type":"file","file":"Teori/Uge 1 - API Kald/H2 Uge 1 - Studieplan.md","x":-800,"y":-940,"width":1560,"height":1380},
-		{"id":"33d568692c025f65","x":-145,"y":824,"width":250,"height":60,"type":"text","text":""}
+		{"id":"8d2e16426dc336b1","type":"file","file":"Teori/Uge 1 - API Kald/H2 Uge 1 - Studieplan.md","x":-2120,"y":-960,"width":1560,"height":1380},
+		{"id":"2ac7081962aea300","type":"file","file":"Teori/Uge 1 - API Kald/H2 Uge 1 - API kald.md","x":-2120,"y":520,"width":1560,"height":1354},
+		{"id":"2dfa24098a1ce045","x":-919,"y":1153,"width":250,"height":60,"type":"text","text":""},
+		{"id":"53342d1da6d99924","x":-440,"y":-960,"width":1560,"height":1380,"type":"file","file":"Teori/Uge 1 - API Kald/H2 Uge 1 - Studieplan.md"},
+		{"id":"1acf595e91104c81","x":-440,"y":520,"width":1560,"height":1354,"color":"5","type":"file","file":"Teori/Uge 1 - API Kald/H2 Uge 1 - Studieplan.md"}
 	],
 	"edges":[
-		{"id":"ee334adf6e4c2cef","fromNode":"8d2e16426dc336b1","fromSide":"bottom","toNode":"33d568692c025f65","toSide":"top"}
+		{"id":"1ea48a095372dc85","fromNode":"8d2e16426dc336b1","fromSide":"bottom","toNode":"2ac7081962aea300","toSide":"top"},
+		{"id":"0c6e1615a21ca5c9","fromNode":"2ac7081962aea300","fromSide":"right","toNode":"53342d1da6d99924","toSide":"left"},
+		{"id":"f9301336ee493df7","fromNode":"53342d1da6d99924","fromSide":"bottom","toNode":"1acf595e91104c81","toSide":"top"}
 	]
 }
