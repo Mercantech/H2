@@ -8,6 +8,6 @@ services:
       - "${LOCAL_WEB_PORT:-8052}:80"
 
 networks:
-  dokploy-network:
-    external: false
+  default:
     name: h2-local
+    external: false
