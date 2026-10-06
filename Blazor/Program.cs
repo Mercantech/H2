@@ -16,10 +16,11 @@ public class Program
         builder.RootComponents.Add<App>("#app");
         builder.RootComponents.Add<HeadOutlet>("head::after");
 
-        // Læs API endpoint fra miljøvariabler eller brug default
+        // Relative /api/ bag nginx (Docker/Dokploy), ellers env / fallback
         var envApiEndpoint = Environment.GetEnvironmentVariable("API_ENDPOINT");
-        Console.WriteLine($"API ENV Endpoint: {envApiEndpoint}");
-        var apiEndpoint = envApiEndpoint ?? "https://h2api.mercantec.tech/";
+        var apiEndpoint = string.IsNullOrWhiteSpace(envApiEndpoint)
+            ? new Uri(new Uri(builder.HostEnvironment.BaseAddress), "api/").AbsoluteUri
+            : envApiEndpoint;
         Console.WriteLine($"API Endpoint: {apiEndpoint}");
 
         // Registrer HttpClient til API service med konfigurerbar endpoint

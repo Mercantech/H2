@@ -1,0 +1,49 @@
+# Dokploy: docker compose up -d --build
+#
+# Host(`h2.mercantec.tech`) → web:80 (nginx)
+# Browser kalder /api/* → nginx → http://api:8080/*
+services:
+  api:
+    build:
+      context: .
+      dockerfile: API/Dockerfile
+    restart: unless-stopped
+    environment:
+      ASPNETCORE_ENVIRONMENT: Production
+      ASPNETCORE_URLS: http://+:8080
+      DOTNET_RUNNING_IN_CONTAINER: "true"
+      CORS_ORIGINS: ${CORS_ORIGINS:-https://h2.mercantec.tech}
+    networks:
+      - internal
+
+  web:
+    build:
+      context: .
+      dockerfile: Blazor/Dockerfile
+      args:
+        API_ENDPOINT: ${API_ENDPOINT:-/api/}
+    restart: unless-stopped
+    depends_on:
+      - api
+    networks:
+      - internal
+      - dokploy-network
+    labels:
+      - traefik.enable=true
+      - traefik.docker.network=dokploy-network
+      - traefik.http.routers.h2-web.rule=Host(`${APP_DOMAIN:-h2.mercantec.tech}`)
+      - traefik.http.routers.h2-web.entrypoints=web
+      - traefik.http.routers.h2-web.service=h2-web
+      - traefik.http.services.h2-web.loadbalancer.server.port=80
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://127.0.0.1/health"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+      start_period: 15s
+
+networks:
+  dokploy-network:
+    external: true
+  internal:
+    driver: bridge

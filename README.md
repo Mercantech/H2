@@ -24,4 +24,11 @@ Aspire er vores hosting platform, den er koblet op til vores API og Blazor. Det 
 
 ### Hosting
 
-Vi udforsker forskellige hosting muligheder på H2 - men vil helst vores lokale datacenter. På H2 bruger vi Windows Server 2022 som platform - det introducerede vi senere i forløbet.
+Live-skabelon: **https://h2.mercantec.tech** (`web` via Traefik, `/api` → intern API).
+
+```bash
+cp .env.example .env
+docker compose up -d --build
+```
+
+Lokalt: `docker compose -f docker-compose.yml -f docker-compose.local.yml up --build`

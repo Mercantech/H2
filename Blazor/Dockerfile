@@ -3,7 +3,7 @@ FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 WORKDIR /src
 
 # Build arguments for API endpoint
-ARG API_ENDPOINT=http://localhost:8051/
+ARG API_ENDPOINT=/api/
 
 # Copy project files
 COPY ["Blazor/Blazor.csproj", "Blazor/"]

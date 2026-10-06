@@ -24,19 +24,23 @@ public class Program
             }
         });
 
-        // Tilføj CORS for specifikke Blazor WASM domæner
+        // CORS: samme origin via nginx i prod; lokale origins + CORS_ORIGINS (kommasepareret)
+        var corsOrigins = (builder.Configuration["CORS_ORIGINS"]
+                ?? Environment.GetEnvironmentVariable("CORS_ORIGINS")
+                ?? "https://h2.mercantec.tech")
+            .Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries)
+            .Concat(new[] { "http://localhost:5085", "http://localhost:8052" })
+            .Distinct(StringComparer.OrdinalIgnoreCase)
+            .ToArray();
+
         builder.Services.AddCors(options =>
         {
             options.AddPolicy(
                 "AllowSpecificOrigins",
-                builder =>
+                policy =>
                 {
-                    builder
-                        .WithOrigins(
-                            "http://localhost:5085",
-                            "http://localhost:8052",
-                            "https://h2.mercantec.tech"
-                        )
+                    policy
+                        .WithOrigins(corsOrigins)
                         .AllowAnyMethod()
                         .AllowAnyHeader()
                         .WithExposedHeaders("Content-Disposition");
