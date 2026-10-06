@@ -1,7 +1,5 @@
 # Dokploy: docker compose up -d --build
-#
-# Host(`h2.mercantec.tech`) → web:80 (nginx)
-# Browser kalder /api/* → nginx → http://api:8080/*
+# Host(`h2.mercantec.tech`) → web:80 · /api/* → api:8080
 services:
   api:
     build:
@@ -14,7 +12,7 @@ services:
       DOTNET_RUNNING_IN_CONTAINER: "true"
       CORS_ORIGINS: ${CORS_ORIGINS:-https://h2.mercantec.tech}
     networks:
-      - internal
+      - dokploy-network
 
   web:
     build:
@@ -26,7 +24,6 @@ services:
     depends_on:
       - api
     networks:
-      - internal
       - dokploy-network
     labels:
       - traefik.enable=true
@@ -45,5 +42,3 @@ services:
 networks:
   dokploy-network:
     external: true
-  internal:
-    driver: bridge
